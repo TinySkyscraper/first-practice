@@ -1,5 +1,5 @@
 name: Issue Flow
-on: issues
+on: [issues, issue_comment]
 jobs:
     show-issue:
         runs-on: ubuntu-latest
