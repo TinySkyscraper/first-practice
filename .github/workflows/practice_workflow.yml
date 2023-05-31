@@ -1,7 +1,7 @@
 name: Practice Workflow
 on: push
 jobs:
-    lint:
+    lint-test-build:
         runs-on: ubuntu-latest
         steps:
             - name: Get Code
@@ -14,13 +14,7 @@ jobs:
               run: npm ci
             - name: Lint Script
               run: npm run lint
-    test:
-        runs-on: ubuntu-latest
-        steps:
             - name: Test Script
               run: npm run test
-    build:
-        runs-on: ubuntu-latest
-        steps:
             - name: Build Script
               run: npm run build
