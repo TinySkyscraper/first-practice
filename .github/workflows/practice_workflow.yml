@@ -4,6 +4,10 @@ jobs:
     lint:
         runs-on: ubuntu-latest
         steps:
+            - name: npm install
+              run: npm install
+            - name: dependencies
+              run: npm ci
             - name: Lint Script
               run: npm run lint
     test:
