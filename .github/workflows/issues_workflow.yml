@@ -1,0 +1,10 @@
+name: Issue Flow
+on: issues
+jobs:
+    show-issue:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show Details
+              run: echo "${{ github }}"
+            - name: Issue Details
+              run: echo "${{ github.event }}"
